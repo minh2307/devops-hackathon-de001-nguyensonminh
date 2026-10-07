@@ -5,12 +5,26 @@
 
 ##2. Môi trường triển khai
 
-##3. C trúc dự án
+##3. Cấu trúc dự án
 
 ##4. cấu hình ngix
-
+![02-nginx.png](screenshots/02-nginx.png)
 
 ##5. Tường Lửa UFW
+root@NguyenSonMinh:~# sudo ufw status verbose
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp (OpenSSH)           ALLOW IN    Anywhere                  
+80/tcp                     ALLOW IN    Anywhere                  
+22/tcp (OpenSSH (v6))      ALLOW IN    Anywhere (v6)             
+80/tcp (v6)                ALLOW IN    Anywhere (v6)
+![03-ufw.png](screenshots/03-ufw.png)
+
 
 ##6. Các lệnh đã triển khai
 apt update
@@ -21,10 +35,12 @@ ufw allow 80/tcp
 ufw enable
 apt install nginx -y
 systemctl status nginx
+curl http://221.121.3.201/
 nano /var/www/html/index.html
 
 
 ##7. kiểm tra & minh chứng
+![website.png](screenshots/04-website.png)
 
 ##8. Quy trình cập nhập website
 
