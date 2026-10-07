@@ -1,9 +1,12 @@
 #devOps Hackathon - Đề 001: Quản lý phòng lab
 
 ##1. Thông tin sinh viên
-
+|Họ và Tên| Mã Sinh viên| Lớp | Tài khoản github | cổng nghix|
+|Nguyễn Sơn Minh| B24DTCN431| CNTT1 | minh2307| |
 
 ##2. Môi trường triển khai
+
+
 
 ##3. Cấu trúc dự án
 
